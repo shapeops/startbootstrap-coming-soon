@@ -1,0 +1,33 @@
+.contact-us {
+  //position: absolute;
+  //margin-bottom: 2rem;
+  //width: 100%;
+  //z-index: 2;
+  ul {
+    //margin-top: 2rem;
+    //width: 100%;
+    //text-align: center;
+    > li {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+
+@media (orientation: landscape) and(max-height: 420px) {
+  .contact-us {
+    ul {
+      padding-left: 0;
+      list-style: none;
+
+      > li {
+        display: inline-block;
+      }
+
+      > li:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+
+    }
+  }
+}

@@ -46,8 +46,9 @@ video {
 
 @media (pointer: coarse) and (hover: none) and (max-width: 1000px) {
   body {
-    background: url('../img/bg-mobile-fallback.jpg') $primary no-repeat center center scroll;
+    background: url('../img/bg-mobile-fallback.jpg') black no-repeat center center scroll;
     background-size: cover;
+    overflow-y:hidden;
   }
   body video {
     display: none;

@@ -46,8 +46,9 @@ video {
 
 @media (pointer: coarse) and (hover: none) and (max-width: 1000px) {
   body {
-    background: url("../img/bg-mobile-fallback.jpg") #002E66 no-repeat center center scroll;
+    background: url("../img/bg-mobile-fallback.jpg") black no-repeat center center scroll;
     background-size: cover;
+    overflow-y: hidden;
   }
   body video {
     display: none;
@@ -131,7 +132,7 @@ video {
   }
 }
 
-@media (min-width: 768px) and (min-height: 450px) {
+@media (min-width: 768px) and (min-height: 540px) {
   .masthead {
     height: 100%;
     min-height: 0;
@@ -165,64 +166,20 @@ video {
   }
 }
 
-.social-icons {
-  margin-bottom: 2rem;
-  width: 100%;
-  z-index: 2;
+.contact-us ul > li {
+  font-size: 1.3rem;
 }
 
-.social-icons ul {
-  margin-top: 2rem;
-  width: 100%;
-  text-align: center;
-}
-
-.social-icons ul > li {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  display: inline-block;
-}
-
-.social-icons ul > li > a {
-  display: block;
-  color: white;
-  background-color: rgba(0, 46, 102, 0.8);
-  border-radius: 100%;
-  font-size: 2rem;
-  line-height: 4rem;
-  height: 4rem;
-  width: 4rem;
-}
-
-@media (min-width: 768px) {
-  .social-icons {
-    margin: 0;
-    right: 2.5rem;
-    bottom: 2rem;
-    width: auto;
+@media (orientation: landscape) and (max-height: 420px) {
+  .contact-us ul {
+    padding-left: 0;
+    list-style: none;
   }
-  .social-icons ul {
-    margin-top: 0;
-    width: auto;
+  .contact-us ul > li {
+    display: inline-block;
   }
-  .social-icons ul > li {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 2rem;
-  }
-  .social-icons ul > li:last-child {
-    margin-bottom: 0;
-  }
-  .social-icons ul > li > a {
-    transition: all 0.2s ease-in-out;
-    font-size: 2rem;
-    line-height: 4rem;
-    height: 4rem;
-    width: 4rem;
-  }
-  .social-icons ul > li > a:hover {
-    background-color: #002E66;
+  .contact-us ul > li:not(:last-child) {
+    margin-right: 0.5rem;
   }
 }
 
